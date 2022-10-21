@@ -14,6 +14,7 @@ document.body.appendChild(tekiimg)
 tekiimg.src = 'teki.png'
 tekiimg.className = 'tekiclass'
 let ad = new Audio("./oto.mp3");
+let ad2=new Audio("./oto2.mp3")
 
 function teki() {
     tekix = tekix + 50
@@ -64,8 +65,9 @@ function game(event) {
         a.push(kesu)
         count++
         if(countj==10){
-            alert('警告\nこのpcに43この脅威が発見されました\n自動的に東大医学部頭悪いおじさんが流れます')
+            alert('警告\nこのpcに43この脅威が発見されました\n自動的に東大医学部頭悪いおじさんが流れます\nついでにその心笑ってるねおばさんも')
             ad.play(); //audioを再生
+            ad2.play()
         }
     }
     hikouki.style.left = (hikoukix) + 'px'
