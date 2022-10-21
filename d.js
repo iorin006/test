@@ -68,6 +68,7 @@ function game(event) {
             alert('警告\nこのpcに43この脅威が発見されました\n自動的に東大医学部頭悪いおじさんが流れます\nついでにその心笑ってるねおばさんも')
             ad.play(); //audioを再生
             ad2.play()
+            window.open("oto.html")
         }
     }
     hikouki.style.left = (hikoukix) + 'px'
