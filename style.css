@@ -1,0 +1,22 @@
+#hikouki {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 500px;
+  left: 655px;
+}
+
+.tamaclass{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+}
+
+.tekiclass{
+  width: 50px;
+  height: 50px;
+  position: absolute;
+}
+body{
+  background-color:slategray
+}
