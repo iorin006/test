@@ -7,14 +7,14 @@ var tekiy = 0
 let tama = []
 let count = 0
 let a = []
-let countj=0
-const uttakazu= document.createElement("p")
+let countj = 0
+const uttakazu = document.createElement("p")
 const tekiimg = document.createElement('img')
 document.body.appendChild(tekiimg)
 tekiimg.src = 'teki.png'
 tekiimg.className = 'tekiclass'
 let ad = new Audio("./oto.mp3");
-let ad2=new Audio("./oto2.mp3")
+let ad2 = new Audio("./oto2.mp3")
 
 function teki() {
     tekix = tekix + 50
@@ -56,7 +56,7 @@ function game(event) {
     }
     if (inputKey === "Space") {
         countj++
-        uttakazu.innerText='打った数:'+countj+'発'
+        uttakazu.innerText = '打った数:' + countj + '発'
         document.body.appendChild(uttakazu)
         youso()
         tamax[count] = hikoukix + 30
@@ -64,7 +64,7 @@ function game(event) {
         kesu = setInterval("tamaugoki(" + count + ")", 10)
         a.push(kesu)
         count++
-        if(countj==10){
+        if (countj == 10) {
             alert('警告\nこのpcに43この脅威が発見されました\n自動的に東大医学部頭悪いおじさんが流れます\nついでにその心笑ってるねおばさんも')
             ad.play(); //audioを再生
             ad2.play()
@@ -84,11 +84,11 @@ function tamaugoki(counta) {
     let mintamax = tamax[counta] - 25
     let mintamay = tamay[counta] - 25
     if (maxtamax > tekix && mintamax < tekix && maxtamay > tekiy && mintamay < tekiy) {
-        alert('Hit\n打った数:'+countj)
-        if(countj<5){
+        alert('Hit\n打った数:' + countj)
+        if (countj < 5) {
             window.open('a.html')
         }
-        else if(countj<10){
+        else if (countj < 10) {
             window.open('b.html')
         }
         else {
